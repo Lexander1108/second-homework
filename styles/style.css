@@ -1,5 +1,6 @@
 :root {
     --white: #ffffff;
+    --gray: #9a9a9a;
     --orange: #ff5722;
     --blue: #10375c;
     --dark-blue: #0d2c4a;
@@ -9,11 +10,14 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: Bahnschrift, "Calisto MT";
 }
+
+/*Hero section*/
 
 .hero-section {
     margin-top: 50px;
-    margin-left: 10%;
+    margin-left: 13%;
     display: block;
     width: 90%;
     height: auto;
@@ -22,11 +26,12 @@ body {
 
 .hero-section__navigation__company-title {
     margin-right: 10%;
-    color: var(--blue);
+    font-size: large;
     font-weight: bold;
+    color: var(--blue);
 }
 
-.navigation {
+.hero-section__navigation {
     display: flex;
 }
 
@@ -44,25 +49,127 @@ body {
 .hero-section__navigation__reviews-button,
 .hero-section__navigation__contact-us-button {
     margin-top: 10px;
-    margin-right: 40px;
+    margin-right: 34px;
     cursor: pointer;
+    font-family: Bahnschrift;
 }
 
 .hero-section__navigation__log-in-button {
     margin-left: 10%;
     margin-right: 20px;
     font-size: larger;
+    font-family: Bahnschrift;
     color: var(--orange);
 }
 
 .hero-section__navigation__sign-in-button {
     padding: 10px 20px;
     cursor: pointer;
+    font-family: Bahnschrift;
     color: var(--white);
     background-color: var(--orange);
+    box-shadow: 0 2px 7px var(--gray);
+}
+
+.hero-section__introducing {
+    position: relative;
+    margin-top: 50px;
+    max-width: 190px;
+    font-size: large;
+    font-family: Bahnschrift;
+}
+
+.hero-section__introducing:after {
+    content:" ";
+    height: 2px;
+    width: 70px;
+    background: black;
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
+
+.hero-section__heading {
+    display: flex;
+    margin-top: 10px;
+}
+
+.hero-section__heading__title__first-word {
+    color: var(--orange);
+    font-family: "Calisto MT";
+}
+
+.hero-section__heading__title {
+    max-width: 580px;
+    margin-right: 13%;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: "Calisto MT";
+    color: var(--blue);
+}
+
+.hero-section__heading__text-review {
+    margin-top: 10px;
+    max-width: 380px;
+    font-size: 20px;
+    font-family: Bahnschrift;
+    font-weight: lighter;
+    color: var(--gray);
+}
+
+.hero-section__search-form {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    position: absolute;
+    background: var(--blue);
+    z-index: 2;
 
 }
 
+.hero-section__search-form__title {
+    padding-top: 20px;
+    margin-left: 10%;
+    margin-bottom: 20px;
+    font-size: 38px;
+    font-family: "Calisto MT";
+    color: white;
+}
+
+.hero-section__search-form__button {
+    margin: 30px 10%;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: Bahnschrift;
+    font-size: large;
+    text-transform: uppercase;
+    text-align: center;
+    background: var(--orange);
+    color: var(--white);
+}
+
+.hero-section__search-form__location-selector,
+.hero-section__search-form__type-selector,
+.hero-section__search-form__date-selector {
+    margin: 10px 10%;
+    padding: 20px;
+    border: 0;
+    cursor: pointer;
+    color: var(--white);
+    background: var(--dark-blue);
+    appearance: none;
+}
+
+.hero-section__slider-image {
+    margin-left: auto;
+    width: 80%;
+    z-index: 1;
+}
+
+.hero-section__search-form-and-slider {
+    display: flex;
+    align-items: center;
+}
 
 
 
