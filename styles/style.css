@@ -1,0 +1,68 @@
+:root {
+    --white: #ffffff;
+    --orange: #ff5722;
+    --blue: #10375c;
+    --dark-blue: #0d2c4a;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.hero-section {
+    margin-top: 50px;
+    margin-left: 10%;
+    display: block;
+    width: 90%;
+    height: auto;
+    font-size: large;
+}
+
+.hero-section__navigation__company-title {
+    margin-right: 10%;
+    color: var(--blue);
+    font-weight: bold;
+}
+
+.navigation {
+    display: flex;
+}
+
+.hero-section__navigation__company-title,
+.hero-section__navigation__contact-us-button,
+.hero-section__navigation__log-in-button {
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.hero-section__navigation__home-button,
+.hero-section__navigation__workspace-button,
+.hero-section__navigation__service-button,
+.hero-section__navigation__events-button,
+.hero-section__navigation__reviews-button,
+.hero-section__navigation__contact-us-button {
+    margin-top: 10px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+.hero-section__navigation__log-in-button {
+    margin-left: 10%;
+    margin-right: 20px;
+    font-size: larger;
+    color: var(--orange);
+}
+
+.hero-section__navigation__sign-in-button {
+    padding: 10px 20px;
+    cursor: pointer;
+    color: var(--white);
+    background-color: var(--orange);
+
+}
+
+
+
+
