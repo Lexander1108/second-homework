@@ -5,82 +5,68 @@
     --blue: #10375c;
     --dark-blue: #0d2c4a;
 }
-
-
-body {
+.page {
     margin: 0;
     padding: 0;
-    font-family: Bahnschrift, "Calisto MT";
+    font-family: Playfair Display, Lato, serif;
 }
 
-/*Hero section*/
-
-.hero-section {
-    margin-top: 50px;
-    margin-left: 13%;
-    display: block;
-    width: 90%;
-    height: auto;
-    font-size: large;
+.top-menu__list {
+    display: flex;
+    width: 80%;
+    margin-left: 12%;
+    margin-top: 30px;
+    list-style-type: none;
 }
 
-.hero-section__navigation__company-title {
+.top-menu__list a {
     margin-right: 10%;
-    font-size: large;
+    font-size: 24px;
     font-weight: bold;
+    cursor: pointer;
     color: var(--blue);
 }
 
-.hero-section__navigation {
-    display: flex;
-}
-
-.hero-section__navigation__company-title,
-.hero-section__navigation__contact-us-button,
-.hero-section__navigation__log-in-button {
-    margin-top: 10px;
+.top-menu__button {
+    font-size: 1em;
+    margin: 0 1.4%;
+    border: 0;
+    background: none;
     cursor: pointer;
 }
 
-.hero-section__navigation__home-button,
-.hero-section__navigation__workspace-button,
-.hero-section__navigation__service-button,
-.hero-section__navigation__events-button,
-.hero-section__navigation__reviews-button,
-.hero-section__navigation__contact-us-button {
-    margin-top: 10px;
-    margin-right: 34px;
-    cursor: pointer;
-    font-family: Bahnschrift;
+.top-menu__login-button {
+    border: 0;
+    margin-left: 12%;
+    padding: 0 10px;
+    font-size: 1em;
+    background: none;
+    color: var(--orange)
 }
 
-.hero-section__navigation__log-in-button {
-    margin-left: 10%;
-    margin-right: 20px;
-    font-size: larger;
-    font-family: Bahnschrift;
-    color: var(--orange);
-}
-
-.hero-section__navigation__sign-in-button {
+.top-menu__sign-up-button {
+    border: 0;
     padding: 10px 20px;
-    cursor: pointer;
-    font-family: Bahnschrift;
     color: var(--white);
     background-color: var(--orange);
-    box-shadow: 0 2px 7px var(--gray);
+    box-shadow: 0 3px 4px var(--orange);
 }
 
-.hero-section__introducing {
+.main-container {
+    width: 80%;
+    margin-left: 10%;
+}
+
+.introduction {
     position: relative;
+    color: var(--blue);
     margin-top: 50px;
     max-width: 190px;
-    font-size: large;
-    font-family: Bahnschrift;
+    font-size: 20px;
 }
 
-.hero-section__introducing:after {
-    content:" ";
+.introduction:after {
+    content: " ";
     height: 2px;
     width: 70px;
     background: var(--blue);
@@ -89,182 +75,43 @@ body {
     right: 0;
 }
 
-.hero-section__heading {
+.heading-section {
     display: flex;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
-.hero-section__heading__title__first-word {
-    color: var(--orange);
-    font-family: "Calisto MT";
-}
-
-.hero-section__heading__title {
-    max-width: 580px;
-    margin-right: 13%;
-    font-size: 50px;
-    font-weight: bold;
-    font-family: "Calisto MT";
+.main-heading {
+    font-size: 52px;
+    margin-right: auto;
     color: var(--blue);
+    max-width: 570px;
 }
 
-.hero-section__heading__text-review {
-    margin-top: 10px;
-    max-width: 380px;
+.main-heading__review {
+    justify-content: flex-end;
     font-size: 20px;
-    font-family: Bahnschrift;
-    font-weight: lighter;
     color: var(--gray);
+    max-width: 370px;
 }
 
-.hero-section__search-form {
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    position: absolute;
+.main-heading__first-word{
+    color: var(--orange);
+}
+
+.search-form {
     background: var(--blue);
-    z-index: 2;
-
+    max-width: 459px;
+    max-height: 445px;
 }
 
-.hero-section__search-form__title {
+.search-form__title {
     padding-top: 20px;
-    margin-left: 10%;
-    margin-bottom: 20px;
-    font-size: 38px;
-    font-family: "Calisto MT";
-    color: white;
-}
-
-.hero-section__search-form__button {
-    margin: 30px 10%;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-family: Bahnschrift;
-    font-size: large;
-    text-transform: uppercase;
-    text-align: center;
-    background: var(--orange);
+    margin-left: 20px;
+    font-size: 34px;
     color: var(--white);
 }
 
-.hero-section__search-form__location-selector,
-.hero-section__search-form__type-selector,
-.hero-section__search-form__date-selector {
-    margin: 10px 10%;
-    padding: 20px;
-    border: 0;
-    cursor: pointer;
-    color: var(--white);
-    background: var(--dark-blue);
-    appearance: none;
-}
 
-.hero-section__slider-image {
-    margin-left: auto;
-    width: 80%;
-    z-index: 1;
-    box-shadow: 0 2px 5px var(--gray);
-}
 
-.hero-section__search-form-and-slider {
-    display: flex;
-    align-items: center;
-}
 
-/*Our spaces section*/
-.space-section {
-    margin-top: 50px;
-    margin-left: 13%;
-    display: block;
-    width: 90%;
-    height: auto;
-    font-size: large;
-}
-
-.space-section__heading {
-    display: flex;
-    margin-top: 50px;
-}
-
-.space-section__heading__title {
-    font-size: 30px;
-    font-family: "Calisto MT";
-    font-weight: bold;
-    color: var(--blue);
-}
-
-.space-section__heading__review {
-    margin-top: 25px;
-    max-width: 450px;
-    margin-left: 15%;
-    margin-right: 15%;
-    font-family: Bahnschrift;
-    font-weight: lighter;
-    color: var(--gray);
-}
-
-.space-section__heading__left-arrow,
-.space-section__heading__right-arrow{
-    margin-top: 30px;
-    height: 20px;
-    width: auto;
-    cursor: pointer;
-}
-
-.space-section__heading__right-arrow {
-    margin-left: 2%;
-}
-
-.space-section__cards {
-    display: flex;
-}
-
-.space-section__text-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 25px;
-    width: 360px;
-    color: var(--white);
-    background: var(--blue);
-}
-
-.space-section__text-card__heading {
-    margin-top: 40%;
-}
-
-.space-section__text-card__caption {
-    max-width: 250px;
-}
-
-.space-section__cards__working-office-card,
-.space-section__cards__custom-office-card {
-    margin: 0;
-}
-
-.space-section__cards__working-office-card__image,
-.space-section__cards__custom-office-card__image {
-    width: 360px;
-    height: auto;
-}
-
-.space-section__cards__working-office-card__image {
-    position: relative;
-}
-
-.space-section__cards__working-office-card__chevron-down {
-    display: block;
-    position: absolute;
-    padding: 5px;
-    height: 30px;
-    width: auto;
-    background: var(--orange);
-}
-
-.pace-section__cards__working-office-card__caption,
-.pace-section__cards__custom-office-card__caption {
-    margin-top: 10px;
-    text-align: center;
-}
 

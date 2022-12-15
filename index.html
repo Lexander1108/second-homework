@@ -1,128 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Frispes landing page</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/reset.css">
 </head>
-<body>
-<main>
+<body class="page">
+<header class="top-menu">
+    <nav class="top-menu__list">
+        <a>Frispes.</a>
+        <button class="top-menu__button">Home</button>
+        <button class="top-menu__button">Workspace</button>
+        <button class="top-menu__button">Service</button>
+        <button class="top-menu__button">Events</button>
+        <button class="top-menu__button">Reviews</button>
+        <button class="top-menu__button">Contact Us</button>
+        <button class="top-menu__login-button">Log In</button>
+        <button class="top-menu__sign-up-button">Sign Up</button>
+    </nav>
+</header>
+<main class="main-container">
     <section class="hero-section">
-        <nav class="hero-section__navigation">
-            <div class="hero-section__navigation__company-title">
-                Frispes.
-            </div>
-            <a class="hero-section__navigation__home-button">
-                Home
-            </a>
-            <a class="hero-section__navigation__workspace-button">
-                Workspace
-            </a>
-            <a class="hero-section__navigation__service-button">
-                Service
-            </a>
-            <a class="hero-section__navigation__events-button">
-                Events
-            </a>
-            <a class="hero-section__navigation__reviews-button">
-                Reviews
-            </a>
-            <a class="hero-section__navigation__contact-us-button">
-                Contact Us
-            </a>
-            <a class="hero-section__navigation__log-in-button">
-                Log In
-            </a>
-            <a class="hero-section__navigation__sign-in-button">
-                Sign Up
-            </a>
-        </nav>
-        <div class="hero-section__introducing">
-            Introducing
-        </div>
-        <div class="hero-section__heading">
-            <div class="hero-section__heading__title">
-                <span class="hero-section__heading__title__first-word">
-                    Revolutionary
-                </span>
-                co-working space
-                to realize your innovation
-            </div>
-            <div class="hero-section__heading__text-review">
-                In frispes, we spearhead new initiatives and
-                provide mentorship to a new startup and
-                help grow their opportunities in key local,
-                regional and global markets
-            </div>
-        </div>
-        <div class="hero-section__search-form-and-slider">
-            <div class="hero-section__search-form">
-                <div class="hero-section__search-form__title">Find your space now</div>
-                <select class="hero-section__search-form__location-selector">
-                    <option value="Malang">Malang, Indonesia</option>
-                    <option value="Kyiv">Kyiv, Ukraine</option>
-                    <option value="Warsaw">Warsaw, Poland</option>
-                    <option value="Washington">Washington, United States</option>
-                    <option value="London">London, England</option>
-                    <option value="Berlin">Berlin, Germany</option>
-                    <option value="moscow">moscow, rissua</option>
-                </select>
-                <select class="hero-section__search-form__type-selector">
-                    <option value="private-office">Private Office</option>
-                </select>
-                <input type="date" value="12-14-2022"
-                       class="hero-section__search-form__date-selector">
-                <a class="hero-section__search-form__button">Find my space</a>
-            </div>
-            <img src="images/heading-slider-image.png"
-                 class="hero-section__slider-image"
-                 alt="slider-image">
-        </div>
+        <div class="introduction">Introducing</div>
     </section>
-    <section class="space-section">
-        <div class="space-section__heading">
-            <h2 class="space-section__heading__title">Our spaces</h2>
-            <p class="space-section__heading__review">
-                Our space is designed to give you a different experience
-                when working with your team or personally
-            </p>
-            <img src="images/left-gray-arrow.png"
-                 class="space-section__heading__left-arrow"
-                 alt="left-arrow">
-            <img src="images/right-orange-arrow.png"
-                 class="space-section__heading__right-arrow"
-                 alt="right-arrow">
-        </div>
-        <div class="space-section__cards">
-            <figure class="space-section__cards__working-office-card">
-                <img src="images/working-office.png"
-                     class="space-section__cards__working-office-card__image"
-                     alt="working-office">
-                <img src="images/chevron-down.png"
-                     class="space-section__cards__working-office-card__chevron-down"
-                     alt="chevron-down">
-                <figcaption class="pace-section__cards__working-office-card__caption">
-                    Working with team
-                </figcaption>
-            </figure>
-            <div class="space-section__text-card">
-                <h2 class="space-section__text-card__heading">Private space</h2>
-                <p class="space-section__text-card__caption">
-                    Comfortable space, Full speed wifi,
-                    free coffee & snack, and many more
-                </p>
-            </div>
-            <figure class="space-section__cards__custom-office-card">
-                <img src="images/custom-office.png"
-                     class="space-section__cards__custom-office-card__image"
-                     alt="custom-office">
-                <figcaption class="pace-section__cards__custom-office-card__caption">
-                    Custom office
-                </figcaption>
-            </figure>
+    <section class="heading-section">
+        <h1 class="main-heading">
+        <span class="main-heading__first-word">
+            Revolutionary
+        </span>
+            co-working space to realize your innovation
+        </h1>
+        <p class="main-heading__review">
+            In frispes, we spearhead new initiatives and
+            provide mentorship to a new startup and
+            help grow their opportunities in key local,
+            regional and global markets
+        </p>
+    </section>
+    <section class="search-form">
+        <div class="search-form__title">Find your space now</div>
+        <label class="search-form__label">
+            <select class="search-form__selector">
 
-        </div>
+            </select>
+        </label>
+        <label>
+            <select class="search-form__selector">
+
+            </select>
+        </label>
     </section>
+
 </main>
 </body>
 </html>
