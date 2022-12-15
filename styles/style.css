@@ -224,7 +224,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 300px;
+    margin: 0 25px;
+    width: 360px;
     color: var(--white);
     background: var(--blue);
 }
@@ -237,9 +238,14 @@ body {
     max-width: 250px;
 }
 
+.space-section__cards__working-office-card,
+.space-section__cards__custom-office-card {
+    margin: 0;
+}
+
 .space-section__cards__working-office-card__image,
 .space-section__cards__custom-office-card__image {
-    width: 300px;
+    width: 360px;
     height: auto;
 }
 
