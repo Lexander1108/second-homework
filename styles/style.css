@@ -5,22 +5,30 @@
     --blue: #10375c;
     --dark-blue: #0d2c4a;
 }
+
 .page {
     margin: 0;
     padding: 0;
     font-family: Playfair Display, Lato, serif;
 }
 
+.top-menu {
+    display: flex;
+    justify-content: center;
+}
+
 .top-menu__list {
     display: flex;
-    width: 80%;
-    margin-left: 12%;
+    justify-content: space-between;
+    align-items: center;
+    width: 1110px;
     margin-top: 30px;
     list-style-type: none;
 }
 
 .top-menu__list a {
-    margin-right: 10%;
+    justify-content: flex-start;
+    margin-right: auto;
     font-size: 24px;
     font-weight: bold;
     cursor: pointer;
@@ -37,8 +45,9 @@
 
 .top-menu__login-button {
     border: 0;
-    margin-left: 12%;
+    margin-left: auto;
     padding: 0 10px;
+    cursor: pointer;
     font-size: 1em;
     background: none;
     color: var(--orange)
@@ -47,14 +56,15 @@
 .top-menu__sign-up-button {
     border: 0;
     padding: 10px 20px;
+    cursor: pointer;
     color: var(--white);
     background-color: var(--orange);
     box-shadow: 0 3px 4px var(--orange);
 }
 
 .main-container {
-    width: 80%;
-    margin-left: 10%;
+    width: 1110px;
+    margin: 0 auto;
 }
 
 .introduction {
@@ -84,7 +94,7 @@
     font-size: 52px;
     margin-right: auto;
     color: var(--blue);
-    max-width: 570px;
+    max-width: 667px;
 }
 
 .main-heading__review {
@@ -98,17 +108,69 @@
     color: var(--orange);
 }
 
+.search-form-and-slider {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
 .search-form {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
     background: var(--blue);
-    max-width: 459px;
-    max-height: 445px;
+    width: 459px;
+    height: 445px;
+    z-index: 2;
+}
+
+.selectors {
+    display: flex;
+    flex-direction: column;
+    width: 365px;
+    margin: 0 auto;
 }
 
 .search-form__title {
-    padding-top: 20px;
-    margin-left: 20px;
+    padding-top: 40px;
+    margin-left: 47px;
     font-size: 34px;
     color: var(--white);
+}
+
+.search-form__selector {
+    border: 0;
+    cursor: pointer;
+    background: var(--dark-blue);
+    color: var(--white);
+    padding: 25px 5px 15px 5px;
+    margin: 10px auto;
+    width: 365px;
+}
+
+.search-form__label {
+    padding: 10px 0 0 0;
+    color: var(--gray);
+}
+
+.search-form__button {
+    width: 365px;
+    margin: 35px auto;
+    border: 0;
+    cursor: pointer;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 18px;
+    text-transform: uppercase;
+    background: var(--orange);
+    color: var(--white);
+}
+
+.search-form__slider-image {
+    width: 960px;
+    margin-left: 316px;
+    box-shadow: 0 2px 5px var(--gray);
+    z-index: 1;
 }
 
 
