@@ -1,5 +1,6 @@
 :root {
     --white: #ffffff;
+    --light-gray: #dfdfdf;
     --gray: #9a9a9a;
     --orange: #ff5722;
     --blue: #10375c;
@@ -242,9 +243,15 @@
     left: 0;
     z-index: 2;
     width: 72px;
+    height: 72px;
     cursor: pointer;
     border: 0;
     background: var(--orange);
+}
+
+.chevron-down-image {
+    height: 35px;
+    width: auto;
 }
 
 .private-space-card {
@@ -252,6 +259,8 @@
     flex-direction: column;
     width: 350px;
     height: 467px;
+    position: relative;
+    z-index: 1;
     background: var(--blue);
     color: var(--white);
 }
@@ -279,27 +288,72 @@
     margin: 0 auto;
 }
 
-.test {
-    background: repeating-linear-gradient(
-            45deg,
-            var(--blue) 0 5px,
-            var(--gray) 5px 2px,
-    );
-    );
-}
-
 .private-space-card__image-caption {
     margin-top: 15px;
     font-size: 20px;
     text-align: center;
 }
 
+.private-space-card__button {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 255px;
+    height: 72px;
+    bottom: 0;
+    left: 0;
+    font-size: 18px;
+    padding-left: 50px;
+    color: var(--white);
+    cursor: pointer;
+    background: var(--orange);
+    border: 0;
+}
 
+.private-space-card__chevron-down-image {
+    width: 35px;
+    height: auto;
+    margin-left: auto;
+    margin-right: 10px;
+}
 
+.our-space-section__cards-slider-indicator {
+    display: flex;
+    flex-direction: column;
+}
 
+.slider-indicator-line {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 50px auto 0;
+    width: 160px;
+    height: 4px;
+}
 
+.slider-indicator-line__active {
+    cursor: pointer;
+    border: 0;
+    background: var(--orange);
+}
 
+.slider-indicator-line__inactive {
+    cursor: pointer;
+    border: 0;
+    background: var(--light-gray);
+}
 
+.slider-indicator-number {
+    margin: 10px auto 0;
+    font-size: 18px;
+    color: var(--gray);
+}
 
+.slider-indicator-number__first-number {
+    font-size: 20px;
+    color: var(--blue);
+}
 
+.slider-indicator-number__slash {
+    color: var(--blue);
+}
 
