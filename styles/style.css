@@ -538,12 +538,7 @@
 
 .gallery-section {
     display: flex;
-    position: relative;
     margin-top: 100px;
-}
-
-.gallery-section__navigation {
-    position: absolute;
 }
 
 .gallery-section-images {
@@ -565,3 +560,65 @@
     width: 350px;
     height: 350px;
 }
+
+/*Frispes users*/
+
+.frispes-users {
+    margin-top: 100px;
+}
+
+.frispes-users__head {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.frispes-users__header {
+    margin: 0 auto;
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--blue);
+}
+
+.frispes-users__article {
+    margin: 30px auto 40px;
+    font-size: 18px;
+    color: var(--gray);
+}
+
+.user-companies {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-companies__google {
+    max-width: 120px;
+    cursor: pointer;
+}
+
+.user-companies__tokopedia {
+    max-width: 180px;
+    cursor: pointer;
+}
+
+.user-companies__upwork {
+    max-width: 120px;
+    cursor: pointer;
+}
+
+.user-companies__microsoft {
+    max-width: 170px;
+    cursor: pointer;
+}
+
+.user-companies__shopify {
+    max-width: 145px;
+    cursor: pointer;
+}
+
+.user-companies__stripe {
+    max-width: 139px;
+    cursor: pointer;
+}
+
